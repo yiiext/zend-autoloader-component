@@ -1,13 +1,13 @@
 <?php
 /**
- * ZendAutoloader
+ * EZendAutoloader
  *
  * @author Alexander Makarov
  * @version 1.0
  * 
  * See readme for instructions. 
  */
-class ZendAutoloader {
+class EZendAutoloader {
     static $basePath = null;
 
     /**
