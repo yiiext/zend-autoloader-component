@@ -23,6 +23,7 @@ You can do search-replace from your IDE: search `require_once` replace to `//req
 Altenatively you can use console:
 
 GNU:
+
 ~~~
 % cd path/to/ZendFramework/library
 % find . -name '*.php' -not -wholename '*/Loader/Autoloader.php' \
@@ -31,6 +32,7 @@ GNU:
 ~~~
 
 MacOSX:
+
 ~~~
 % cd path/to/ZendFramework/library
 % find . -name '*.php' | grep -v './Loader/Autoloader.php' | \
@@ -41,6 +43,7 @@ xargs sed -E -i~ 's/(require_once)/\/\/ \1/g'
 ### Updating your index.php
 
 We need to register loader before application is run:
+
 ~~~
 [php]
 define('YII_DEBUG', true);
